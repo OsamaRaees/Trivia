@@ -1,0 +1,29 @@
+package com.trivia.Util;
+
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.util.Properties;
+
+public class DBUtil {
+
+	private static Connection con;
+	public static Connection getConnection() {
+		
+		InputStream is = DBUtil.class.getClassLoader().getResourceAsStream("db.properties");
+		Properties prop = new Properties();
+		
+		try {
+			prop.load(is);
+			String driver = prop.getProperty("driver");
+			String url = prop.getProperty("url");
+			String user = prop.getProperty("user");
+			String password = prop.getProperty("password");
+			
+			Class.forName(driver);
+			con = DriverManager.getConnection(url, user, password);
+		}
+		
+		return con;
+	}
+}

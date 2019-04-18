@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.come/ajax/libs/jquery/3.3.1/jquery.min.css"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.css"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Cafeteria Management System </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Main.jsp">Home <span class="sr-only">(current)</span></a>
+      </li>
+    
+      <li class="nav-item active">
+        <a class="nav-link" href="About.jsp">About <span class="sr-only">(current)</span></a>
+      </li>  
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="Mission.jsp">Mission & Vision <span class="sr-only">(current)</span></a>
+      </li>  
+      
+       <li class="nav-item active">
+        <a class="nav-link" href="#">Service <span class="sr-only">(current)</span></a>
+      </li>        
+     
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Login/Register
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="LoginType.jsp">Login</a>
+          <a class="dropdown-item" href="RegisterType.jsp">Registration</a>
+        </div>
+      </li>
+    </ul>
+    
+    
+   
+  </div>
+</nav>
+
+
+<div align="center" style="margin-top: 100px;">
+<a href="AdminLogin.jsp" class="btn btn-primary">Admin Login</a><br><br><br><br>
+<a href="CustomerLogin.jsp" class="btn btn-primary">Customer Login</a><br><br><br><br>
+<a href="VendorLogin.jsp" class="btn btn-primary">Vendor Login</a>
+</div>
+</body>
+</html>

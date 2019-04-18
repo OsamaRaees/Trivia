@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>Global corporate working environment has led factories, 
+offices, call centres, hospitals, clubs, hostels and
+schools to operate their own cafeteria for employees and students.
+The process of managing the cafeteria menu, attendance and consumption
+becomes quite challenging. An automated canteen management software is
+essential for preventing long queues by quick and easy transactions. 
+Moreover, cumbersome and error prone paper based manual processes leads inaccurate results and wastage of time. CMS offers a one-stop solution for hassle free transaction. A transparent cafeteria management system improves quality of service and reduces arguments.</p><br>
+
+
+CMS provides an automated canteen management system, starting from placing an order to delivery and including payments. Cafeteria Management allows an administrator to create up to 255 menu items for accommodating different types of food items offered in the canteen. This ultimately improves productivity and reduces wastage of food.
+
+</body>
+</html>

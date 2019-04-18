@@ -1,0 +1,12 @@
+package com.trivia.Model;
+
+public class Order {
+
+	private int OrderID ;
+	private int CustomerID; 
+	private int TotalOrderAmount; 
+	private Date OrderDate ;
+	private Date DeliverDate ;
+	private String DeliverStatus; 
+	private String OrderStatus;
+}

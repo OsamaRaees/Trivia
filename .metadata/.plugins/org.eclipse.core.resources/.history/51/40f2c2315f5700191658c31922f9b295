@@ -1,0 +1,21 @@
+package com.trivia.Model;
+
+import java.util.Date;
+
+public class Admin {
+
+	private int Id;
+	private String Password;
+	private String FirstName;
+	private String LastName;
+	private String Gender;
+	private int Contact;
+	private Date DOB;
+	private String Address;
+	private String AreaResidence;
+	private String City;
+	private int PostalCode;
+	private String Country;
+	private String Profession;
+	private String Status;
+}

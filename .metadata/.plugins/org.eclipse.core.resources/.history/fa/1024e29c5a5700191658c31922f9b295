@@ -1,0 +1,5 @@
+package com.trivia.Util;
+
+public class DBUtil {
+
+}

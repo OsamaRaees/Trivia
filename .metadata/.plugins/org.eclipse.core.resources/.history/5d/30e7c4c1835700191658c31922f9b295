@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>Mission</h3>
+Ensuring that better food, prepared from whole, unprocessed ingredients is accessible to everyone.
+<h3>Vision</h3>
+For customers who wish to order meals from the cafeteria, the Cafeteria Ordering System is an Internet-based application that will accept individual or group meal orders, process payments, and trigger delivery of the prepared meals to a designated location on the Process Impact campus. Unlike the current telephone and manual ordering processes, customers who use the Cafeteria Ordering System will not have to go to the cafeteria to get their meals, which will save them time and will increase the food choices available to them.
+
+</body>
+</html>

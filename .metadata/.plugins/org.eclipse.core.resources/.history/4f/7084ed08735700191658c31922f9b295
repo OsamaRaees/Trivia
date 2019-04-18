@@ -1,0 +1,44 @@
+package com.trivia.Dao;
+
+import java.util.List;
+
+import com.trivia.Model.Admin;
+import com.trivia.Model.Customer;
+import com.trivia.Model.Menu;
+import com.trivia.Model.Vendor;
+
+public interface IMethods {
+
+	public void AdminRegister(Admin admin);
+	public boolean AdminLogin(int Id, String Password);
+	public List<Admin> getAllAdmins();
+	public Admin getAdmin(int id);
+	public void DeleteAdmin(int id);
+	public void UpdateAdmin(Admin admin);
+	
+	
+	public void CustomerRegister(Customer customer);
+	public boolean CustomerLogin(int id, String Password);
+	public List<Customer> getallCustomers();
+	public Customer getcustomer(int id);
+	public void DeleteCustomer(int id);
+	public void UpdateCustomer(Customer customer);
+	
+	
+	public void VendorRegister(Vendor vendor);
+	public boolean Vendor(int id, String Password);
+	public List<Vendor> getAllVendor();
+	public Vendor getvendor(int id);
+	public void DeleteVendor(int id);
+	public void UpdateVendor(Vendor vendor);
+	
+	
+	public List<Menu> getallMenu();
+	public void UpdateMenu(Menu menu);
+	public void DeleteMenu(int id);
+	public Menu getMenu(int id);
+	
+	
+	
+	
+}

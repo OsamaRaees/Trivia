@@ -1,0 +1,5 @@
+package com.trivia.Dao;
+
+public interface IAdmin {
+
+}

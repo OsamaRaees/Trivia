@@ -1,0 +1,11 @@
+package com.trivia.Model;
+
+public class OrderItems {
+
+	private int OderItemsID;
+	private int OrderID ;
+	private int CafeID ;
+	private int MealID ;
+	private int Price;
+	
+}

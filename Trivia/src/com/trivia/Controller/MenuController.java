@@ -1,0 +1,66 @@
+package com.trivia.Controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.trivia.Dao.MethodImpl;
+import com.trivia.Model.Menu;
+
+/**
+ * Servlet implementation class MenuController
+ */
+@WebServlet("/MenuController")
+public class MenuController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private MethodImpl dao;
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public MenuController() {
+    	dao = new MethodImpl();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		request.setAttribute("lister", dao.getallMenu());
+		request.getRequestDispatcher("PreWelcome.jsp").include(request, response);
+	
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		Menu menu = new Menu();
+		HttpSession sessions;
+		String actions = request.getParameter("submit");
+		if(actions.equals("register")) {
+			String mid = request.getParameter("MenuId");
+			String vid = request.getParameter("mvendorID");
+			menu.setMenuID(Integer.parseInt(mid));
+			menu.setVendorID(Integer.parseInt(vid));
+			menu.setManuName(request.getParameter("mmenuname"));
+			menu.setMenuStatus(request.getParameter("mstatus"));
+			
+			dao.Addmenu(menu);
+			RequestDispatcher rd = request.getRequestDispatcher("MenuShow.jsp");
+			if(rd != null) {
+				rd.forward(request, response);
+			}
+       }
+		doGet(request, response);
+	}
+
+}

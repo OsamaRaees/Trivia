@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+D:\Web tech\Trivia\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2468866585.index
+\Trivia\src

@@ -1,0 +1,12 @@
+package com.trivia.Dao;
+
+public interface IMethods {
+
+	public void AdminRegister();
+	//public void AdminLogin();
+	public void CustomerRegister();
+	//public void CustomerLogin();
+	public void VendorRegister();
+	//public void VendorLogin();
+	
+}

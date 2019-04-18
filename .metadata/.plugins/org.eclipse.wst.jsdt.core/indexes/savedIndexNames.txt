@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\Web tech\Trivia\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4123822264.index
+263147261.index
+3964498991.index
+95622429.index
+208913426.index
+3331453989.index
+2468866585.index
